@@ -21,3 +21,5 @@ import foo from 'foo';
 
 | Properties | type | description | default |
 | :--------- | :--: | :---------: | ------: |
+
+<img src='http://linebot.lesca.net/data/git/02.gif' width='200' height='200' />
