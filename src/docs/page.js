@@ -26,7 +26,7 @@ export default class page extends React.Component {
 	render() {
 		return (
 			<div className='page'>
-				<button onClick={this.submite.bind(this)}> submite something</button>
+				<button onClick={this.submite.bind(this)}> submite something </button>
 				{this.append()}
 			</div>
 		);
