@@ -3,23 +3,60 @@
 # Installation
 
 ```sh
-$ npm install <package> --save
+$ npm install lesca-react-loading --save
 ```
 
 # Usage
 
 ```javascript
-import foo from 'foo';
+import Loading from 'lesca-react-loading';
+
+constructor() {
+    this.state = { loading: false };
+}
+
+submite() {
+    this.setState({ loading: true });
+
+    new Promise((res, rej) => {
+        console.log('sending data...');
+        setTimeout(() => res(), 3000);
+    }).then(() => {
+        this.setState({ loading: false }, () => {
+            console.log('success');
+        });
+    });
+}
+
+append() {
+    if (this.state.loading) return <Loading style='dark' text='update now...' />;
+}
+
+render() {
+    return (
+        <div className='page'>
+            <button onClick={this.submite.bind(this)}> submite something</button>
+            {this.append()}
+        </div>
+    );
+}
+
 ```
 
-# Methods
+# Porps
 
-| method | options | description | default |
-| :----- | :-----: | :---------: | ------: |
+| props |  type  |                  description                   | default |
+| :---- | :----: | :--------------------------------------------: | ------: |
+| style | string | There are two basic themes. 'dark' and 'light' |  'dark' |
+| text  | string |             description of loading             |         |
 
-# Properties
-
-| Properties | type | description | default |
-| :--------- | :--: | :---------: | ------: |
+# Theme
 
 <img src='http://linebot.lesca.net/data/git/02.gif' width='200' height='200' />
+
+| class name          |      style       |          description           | default |
+| :------------------ | :--------------: | :----------------------------: | ------: |
+| .lesca-loading-bg   | background-color |        background color        |    #111 |
+|                     |     opacity      |   alpha of background color    |    0.95 |
+| .lesca-loading-c .l | background-color | loading icon line-streak color |    #fff |
+| .lesca-loading-text |      color       |     description text color     | #f8f9fa |
