@@ -20,7 +20,7 @@ export default class page extends React.Component {
 	}
 
 	append() {
-		if (this.state.loading) return <Loading style='dark' text='update now...' />;
+		if (this.state.loading) return <Loading text='update now...' />;
 	}
 
 	render() {

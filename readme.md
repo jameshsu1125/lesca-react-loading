@@ -54,9 +54,8 @@ render() {
 
 <img src='http://linebot.lesca.net/data/git/02.gif' width='200' height='200' />
 
-| class name          |      style       |          description           | default |
-| :------------------ | :--------------: | :----------------------------: | ------: |
-| .lesca-loading-bg   | background-color |        background color        |    #111 |
-|                     |     opacity      |   alpha of background color    |    0.95 |
-| .lesca-loading-c .l | background-color | loading icon line-streak color |    #fff |
-| .lesca-loading-text |      color       |     description text color     | #f8f9fa |
+| class name                 |      style       |          description           |         default |
+| :------------------------- | :--------------: | :----------------------------: | --------------: |
+| .lesca-loading .background | background-color |        background color        | rgba(0,0,0,0.8) |
+| .lesca-loading .ico > div  | background-color | loading icon line-streak color |            #fff |
+| .lesca-loading .text       |      color       |     description text color     |         #f8f9fa |
