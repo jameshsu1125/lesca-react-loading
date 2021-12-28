@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Loading from './../lib/index';
 
 const Page = () => {
 	const [loading, setLoading] = useState(false);
 
-	useEffect(() => {}, [loading]);
 	return (
 		<div className='page'>
 			<button
