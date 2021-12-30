@@ -11,8 +11,6 @@ const BasicLoading = (props) => {
 
 	const { style, text, position } = opt;
 
-	console.log(opt);
-
 	return (
 		<div id={style || ''} className='lesca-loading' style={{ position }}>
 			<div className='background' />
