@@ -9,38 +9,13 @@ $ npm install lesca-react-loading --save
 # Usage
 
 ```javascript
-import Loading from 'lesca-react-loading';
+import { useState } from 'react';
+import LoadingProcess from 'lesca-react-loading';
 
-constructor() {
-    this.state = { loading: false };
-}
-
-submite() {
-    this.setState({ loading: true });
-
-    new Promise((res, rej) => {
-        console.log('sending data...');
-        setTimeout(() => res(), 3000);
-    }).then(() => {
-        this.setState({ loading: false }, () => {
-            console.log('success');
-        });
-    });
-}
-
-append() {
-    if (this.state.loading) return <Loading style='dark' text='update now...' />;
-}
-
-render() {
-    return (
-        <div className='page'>
-            <button onClick={this.submite.bind(this)}> submite something</button>
-            {this.append()}
-        </div>
-    );
-}
-
+const Page = () => {
+	const [uploading, setUploading] = useState(false);
+	return <>{uploading && <LoadingProcess text='uploading...' />}</>;
+};
 ```
 
 # Porps

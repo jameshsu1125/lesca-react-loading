@@ -1,18 +1,11 @@
 import React from 'react';
-import './main.less';
+import './style.less';
 
-const defaultProps = {
-	text: '',
-	position: 'fixed',
-};
-
-const BasicLoading = (props) => {
-	const opt = { ...defaultProps, ...props };
-
-	const { style, text, position } = opt;
+const LoadingProcess = (props) => {
+	const { theme, text, position, style } = props;
 
 	return (
-		<div id={style || ''} className='lesca-loading' style={{ position }}>
+		<div id={theme} className='lesca-loading' style={{ position, ...style }}>
 			<div className='background' />
 			<div className='ico'>
 				{[...new Array(18).keys()].map((e) => (
@@ -24,4 +17,11 @@ const BasicLoading = (props) => {
 	);
 };
 
-export default BasicLoading;
+LoadingProcess.defaultProps = {
+	text: '',
+	position: 'fixed',
+	theme: 'dark',
+	style: {},
+};
+
+export default LoadingProcess;
