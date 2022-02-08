@@ -20,17 +20,13 @@ const Page = () => {
 
 # Porps
 
-| props |  type  |                  description                   | default |
-| :---- | :----: | :--------------------------------------------: | ------: |
-| style | string | There are two basic themes. 'dark' and 'light' |  'dark' |
-| text  | string |             description of loading             |         |
+| props    |  type  |                  description                   | default |
+| :------- | :----: | :--------------------------------------------: | ------: |
+| theme    | string | There are two basic themes. 'dark' and 'light' |  'dark' |
+| position | string |             'fixed' or 'absulote'              | 'fixed' |
+| text     | string |             description of loading             |      '' |
+| style    | object |                  inline-style                  |      {} |
 
 # Theme
 
 <img src='http://linebot.lesca.net/data/git/02.gif' width='200' height='200' />
-
-| class name                 |      style       |          description           |         default |
-| :------------------------- | :--------------: | :----------------------------: | --------------: |
-| .lesca-loading .background | background-color |        background color        | rgba(0,0,0,0.8) |
-| .lesca-loading .ico > div  | background-color | loading icon line-streak color |            #fff |
-| .lesca-loading .text       |      color       |     description text color     |         #f8f9fa |
