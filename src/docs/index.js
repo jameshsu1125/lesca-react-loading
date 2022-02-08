@@ -3,7 +3,7 @@ import { Navation, Code } from './components';
 import Demo from './demo';
 import './styles.less';
 
-const homepage = '#';
+const homepage = 'https://github.com/jameshsu1125/lesca-react-loading';
 const name = 'lesca-react-loading';
 const description = 'simple exsample';
 
