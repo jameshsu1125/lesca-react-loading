@@ -14,7 +14,7 @@ import LoadingProcess from 'lesca-react-loading';
 
 const Page = () => {
 	const [uploading, setUploading] = useState(false);
-	return <>{uploading && <LoadingProcess text='uploading...' />}</>;
+	return <div>{uploading && <LoadingProcess text='uploading...' />}</div>;
 };
 ```
 
