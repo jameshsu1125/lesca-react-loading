@@ -79,7 +79,7 @@ const Demo = () => {
 						uploadToServer().then(() => setUploading(false));
 					}}
 				>
-					Update Something
+					Upload Something
 				</button>
 			</div>
 		</>
