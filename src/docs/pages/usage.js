@@ -17,7 +17,11 @@ const Demo = () => {
 
   return (
     <div>
-      {uploading && <LoadingProcess text='uploading...' />}
+      {uploading && (
+        <LoadingProcess backgroundColor='#00ff66' iconColor='#f60' scale={0.8}>
+          <span className='inner'>uploading</span>
+        </LoadingProcess>
+      )}
       <button
         onClick={() => {
           setUploading(true);

@@ -1,10 +1,10 @@
 import { Button, ButtonGroup, Alert, IconButton } from '@mui/material';
 import { useState } from 'react';
-import LoadingProcess from '../../lib';
+import LoadingProcess from '../../lib/index';
 import CloseIcon from '@mui/icons-material/Close';
 import Collapse from '@mui/material/Collapse';
 
-const uploadToServer = () => new Promise((res) => setTimeout(() => res(), 3000));
+const uploadToServer = () => new Promise((res) => setTimeout(() => res(), 1000));
 
 const Demo = () => {
   const [uploading, setUploading] = useState(false);
@@ -49,7 +49,11 @@ const Demo = () => {
           upload something to server
         </Button>
       </ButtonGroup>
-      {uploading && <LoadingProcess />}
+      {uploading && (
+        <LoadingProcess backgroundColor='#00ff66' iconColor='#f60' scale={0.8}>
+          <span className='inner'>uploading</span>
+        </LoadingProcess>
+      )}
     </div>
   );
 };
