@@ -15,7 +15,7 @@ const LoadingProcess = ({ children, position, scale, backgroundColor, iconColor 
   const iconStyle = { backgroundColor: iconColor };
   const iconScale = { transform: `scale(${scale})` };
   return (
-    <div className='lesca-loading' style={style as CSSProperties}>
+    <div className='lesca-loading' style={style as unknown as CSSProperties}>
       <div className='background' style={backgroundStyle as CSSProperties} />
       <div className='content' style={iconScale as CSSProperties}>
         <div className='ico'>
