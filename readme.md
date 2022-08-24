@@ -13,7 +13,7 @@ a simple process loading of react component.
 
 look like this.
 
-<img src='http://linebot.lesca.net/data/git/02.gif' width='200' height='200' />
+<img src='http://archive.lesca.net/loading.gif' width='200' height='200' />
 
 #### [Live Demo](https://jameshsu1125.github.io/lesca-react-loading/)
 
