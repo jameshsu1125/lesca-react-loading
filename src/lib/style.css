@@ -1,0 +1,122 @@
+.lesca-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+.lesca-loading > .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@keyframes play {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.lesca-loading > .content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.lesca-loading > .content .ico {
+  position: absolute;
+  left: 50%;
+  margin-top: -25px;
+  width: 0;
+  height: 0;
+  animation: play 2s steps(18) infinite;
+}
+.lesca-loading > .content .ico > div {
+  position: absolute;
+  left: 20px;
+  width: 15px;
+  height: 2px;
+  transform-origin: -20px 0px;
+}
+.lesca-loading > .content .ico > div:nth-child(0) {
+  transform: rotate(0deg);
+  opacity: 0;
+}
+.lesca-loading > .content .ico > div:nth-child(1) {
+  transform: rotate(20deg);
+  opacity: 0.05;
+}
+.lesca-loading > .content .ico > div:nth-child(2) {
+  transform: rotate(40deg);
+  opacity: 0.1;
+}
+.lesca-loading > .content .ico > div:nth-child(3) {
+  transform: rotate(60deg);
+  opacity: 0.15;
+}
+.lesca-loading > .content .ico > div:nth-child(4) {
+  transform: rotate(80deg);
+  opacity: 0.2;
+}
+.lesca-loading > .content .ico > div:nth-child(5) {
+  transform: rotate(100deg);
+  opacity: 0.25;
+}
+.lesca-loading > .content .ico > div:nth-child(6) {
+  transform: rotate(120deg);
+  opacity: 0.3;
+}
+.lesca-loading > .content .ico > div:nth-child(7) {
+  transform: rotate(140deg);
+  opacity: 0.35;
+}
+.lesca-loading > .content .ico > div:nth-child(8) {
+  transform: rotate(160deg);
+  opacity: 0.4;
+}
+.lesca-loading > .content .ico > div:nth-child(9) {
+  transform: rotate(180deg);
+  opacity: 0.45;
+}
+.lesca-loading > .content .ico > div:nth-child(10) {
+  transform: rotate(200deg);
+  opacity: 0.5;
+}
+.lesca-loading > .content .ico > div:nth-child(11) {
+  transform: rotate(220deg);
+  opacity: 0.55;
+}
+.lesca-loading > .content .ico > div:nth-child(12) {
+  transform: rotate(240deg);
+  opacity: 0.6;
+}
+.lesca-loading > .content .ico > div:nth-child(13) {
+  transform: rotate(260deg);
+  opacity: 0.65;
+}
+.lesca-loading > .content .ico > div:nth-child(14) {
+  transform: rotate(280deg);
+  opacity: 0.7;
+}
+.lesca-loading > .content .ico > div:nth-child(15) {
+  transform: rotate(300deg);
+  opacity: 0.75;
+}
+.lesca-loading > .content .ico > div:nth-child(16) {
+  transform: rotate(320deg);
+  opacity: 0.8;
+}
+.lesca-loading > .content .ico > div:nth-child(17) {
+  transform: rotate(340deg);
+  opacity: 0.85;
+}
+.lesca-loading > .content .ico > div:nth-child(18) {
+  transform: rotate(360deg);
+  opacity: 0.9;
+}
+.lesca-loading > .content > .text {
+  position: absolute;
+  margin-top: 20px;
+  width: 100%;
+  color: #f8f9fa;
+  text-align: center;
+}

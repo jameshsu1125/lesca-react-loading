@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react';
-import './style.less';
+import './style.css';
 
 type Props = {
   position: CSSProperties;
